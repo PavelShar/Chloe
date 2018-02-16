@@ -3,7 +3,6 @@
 This is a simple docker image with `nodejs` and `OpenSSH` on board.  
 Image is built on top of minimalistic `Ubuntu Alpine`
 
-[![Travis](https://img.shields.io/travis/pavelshar/chloe.svg?style=flat-square)][travis]
 [![Docker Pulls](https://img.shields.io/docker/pulls/pavelshar/chloe.svg?style=flat-square)][hub]
 [![Docker Stars](https://img.shields.io/docker/stars/pavelshar/chloe.svg?style=flat-square)][hub]
 [![Docker Automated build](https://img.shields.io/docker/automated/pavelshar/chloe.svg?style=flat-square)][hub]
@@ -26,4 +25,3 @@ Simple run: `docker run --name chloe -p 8080:80 -p 8022:22 -d pavelshar/chloe:la
 You can redefine ssh password using environment variable `SSH_PASSWORD` when creating container - `docker run --name chloe -p 8080:80 -p 8022:22 -d -e SSH_PASSWORD=mysshpass pavelshar/chloe:latest`
 
 [hub]: https://hub.docker.com/r/pavelshar/chloe/
-[travis]: https://travis-ci.org/PavelShar/chloe
