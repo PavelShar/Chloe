@@ -1,5 +1,4 @@
-
-<img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" height="80"/>
+## Chloe: NodeJS + OpenSSH Docker image
 
 This is a simple docker image with `nodejs` and `OpenSSH` on board.  
 Image is built on top of minimalistic `Ubuntu Alpine`
