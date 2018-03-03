@@ -5,11 +5,8 @@ RUN echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 USER root
 
 ADD . /.docker
-RUN chown -R root:root .docker
-RUN chmod -R 755 .docker
-
-
-WORKDIR .docker/
+RUN chown -R root:root /.docker
+RUN chmod -R 755 /.docker
 
 
 # Install dependencies
@@ -21,4 +18,4 @@ RUN apk add --update \
     ssh-keygen -A
 
 EXPOSE 80 22 8000-8010
-CMD sh ./deploy/entrypoint.sh
+CMD sh /.docker/deploy/entrypoint.sh
