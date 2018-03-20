@@ -18,4 +18,4 @@ RUN apk add --update \
     ssh-keygen -A
 
 EXPOSE 80 22 8000-8010
-CMD sh /.docker/deploy/entrypoint.sh && sh -c "while true; do sleep 1; done"
+CMD sh /.docker/deploy/entrypoint.sh && sh /.docker/deploy/daemon.sh
