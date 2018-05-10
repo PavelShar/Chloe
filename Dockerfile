@@ -17,5 +17,5 @@ RUN apk add --update \
     sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config && \
     ssh-keygen -A
 
-EXPOSE 80 22 8000-8010
+EXPOSE 80 22
 CMD sh /.docker/deploy/entrypoint.sh && sh /.docker/deploy/daemon.sh
